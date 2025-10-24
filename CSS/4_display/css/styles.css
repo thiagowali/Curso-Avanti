@@ -1,0 +1,43 @@
+@charset 'UTF-8';
+
+
+.hide {
+    display: none;
+}
+
+a {
+    background-color: #eee;
+    padding: 30px;
+    display: inline-block;
+}
+
+a:hover {
+    background-color: #0ff;
+}
+
+.content-flex {
+    display: flex;
+    width: 1280px;
+    justify-content: flex-start;
+    height: 500px;
+    align-items: center;
+    
+}
+
+.content-flex p {
+    padding: 10px;
+    width: 250px;
+}
+
+.content-flex p:first-child {
+    font-weight: bold;
+}
+
+.content-flex p::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: #f00;
+    display: inline-block;
+    margin-right: 20px;
+}
