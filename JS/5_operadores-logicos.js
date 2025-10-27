@@ -16,4 +16,4 @@ console.log(`Você atende aos requisitos de idade ${idade} e de genero ${genero}
 console.log(`Você atende aos requisitos de idade ${idade} e de genero ${genero}? ${resultado3}`)
 console.log(`Você atende aos requisitos de idade ${idade} e de genero ${genero}? ${resultado4}`)
 console.log(`Você atende aos requisitos de idade ${idade} e de genero ${genero}? ${resultado5}`)
-console.log(`Você atende aos requisitos de idade ${idade} e de genero ${genero}? ${!resultado5}`)
+console.log(`Você atende aos requisitos de idade ${idade} e de genero ${genero}? ${!resultado5}`) //inversão de resultado com ! (not)
