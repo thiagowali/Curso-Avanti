@@ -8,3 +8,23 @@ content.innerHTML = "<p> Parágrafo de texto</p>"
 content.style.backgroundColor = "#00f"
 content.style.fontSize = "30px"
 content.style.color = "#fff"
+
+// Seleção por classe
+
+const classText = document.getElementsByClassName("text")
+
+console.log("classText", classText)
+
+for(text of classText) {
+    text.style.color = "#0ff"
+}
+
+// Seleção por Tag
+
+const titles = document.getElementsByTagName("h2")
+
+console.log("titles", titles)
+
+for(title of titles) {
+    title.style.fontSize = "30px"
+}
