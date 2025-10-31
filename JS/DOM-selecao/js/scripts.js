@@ -28,3 +28,24 @@ console.log("titles", titles)
 for(title of titles) {
     title.style.fontSize = "30px"
 }
+
+// Query Selector
+
+const elementFeature = document.querySelector("#feature")
+
+console.log("elementFeature", elementFeature)
+
+const newElement = document.createElement("p")
+
+newElement.textContent = "Um novo parágrafo"
+
+elementFeature.append(newElement)
+ 
+elementFeature.insertAdjacentHTML("beforeend", "<p>Outro parágrafo criado dinâmicamente</p>")
+
+elementFeature.insertAdjacentHTML("beforebegin", `
+    <div>
+      <p>Outro parágrafo criado dinâmicamente usando template string</p>
+    </div>`)
+
+document.body.insertBefore(newElement, elementFeature)
