@@ -9,6 +9,10 @@ content.style.backgroundColor = "#00f"
 content.style.fontSize = "30px"
 content.style.color = "#fff"
 
+// REMOVE
+
+content.remove
+
 // Seleção por classe
 
 const classText = document.getElementsByClassName("text")
@@ -49,3 +53,17 @@ elementFeature.insertAdjacentHTML("beforebegin", `
     </div>`)
 
 document.body.insertBefore(newElement, elementFeature)
+
+// Query Selector ALL
+
+const links = document.querySelectorAll("#links a")
+
+console.log("links", links)
+
+for(link of links) {
+    link.classList.add("feature-links")
+    console.log(link.getAttribute("href"))
+    link.target = "_blank"
+    link.title = link.getAttribute("href").slice(0,-5)
+}
+
