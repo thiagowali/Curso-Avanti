@@ -67,3 +67,15 @@ for(link of links) {
     link.title = link.getAttribute("href").slice(0,-5)
 }
 
+// Navegação pelo DOM
+
+const lista = document.querySelector("#links ul")
+
+lista.parentNode.style.backgroundColor = "#f0f"
+
+lista.children
+for(list of lista.children) {
+    list.style.fontSize = "30px"
+}
+
+lista.firstElementChild.style.fontSize = "20px"
